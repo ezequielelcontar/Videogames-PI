@@ -1,3 +1,4 @@
+//api/src/models/Videogame.js
 const { DataTypes } = require('sequelize');
 // Exportamos una funcion que define el modelo
 // Luego le inyectamos la conexion a sequelize.
@@ -27,7 +28,8 @@ module.exports = (sequelize) => {
         allowNull: true,
     },
     platforms: {
-        type: DataTypes.ENUM('Xbox One')
+        type: DataTypes.ENUM('PC', 'PlayStation', 'Xbox', 'Switch', 'Mobile'),
+        allowNull: false,
     },
     description: {
         type: DataTypes.STRING,

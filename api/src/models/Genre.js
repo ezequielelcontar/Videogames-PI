@@ -1,3 +1,4 @@
+//api/src/models/Genre.js
 const { DataTypes } = require('sequelize');
 // Exportamos una funcion que define el modelo
 // Luego le inyectamos la conexion a sequelize.
